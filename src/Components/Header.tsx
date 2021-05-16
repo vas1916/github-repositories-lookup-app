@@ -1,12 +1,8 @@
 import { FunctionComponent } from "react";
 import Box from "@material-ui/core/Box";
-import { AppBar,  makeStyles,Typography } from "@material-ui/core";
-import { styles } from '../Styles/styles';
-
-const useStyles = makeStyles(styles);
+import { AppBar,Typography } from "@material-ui/core";
 
 export const Header : FunctionComponent = ()=> {
-    const classes = useStyles();
     return(
         <Box>
             <AppBar position="static">
