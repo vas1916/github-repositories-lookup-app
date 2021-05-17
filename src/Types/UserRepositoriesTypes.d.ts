@@ -6,3 +6,14 @@ export interface ListLink{
     target:string,
     align?:string
 }
+export interface RepositoryListProps{
+    repositories: Repository[],
+}
+export interface Repository{
+    id:string,
+    full_name:string,
+    name:string,
+    description:string,
+    stargazers_count:string,
+    language:string                                      
+}

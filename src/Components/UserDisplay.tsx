@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import Avatar from '@material-ui/core/Avatar';
-import { Box, ListItem, makeStyles, Typography } from '@material-ui/core';
+import { Box, makeStyles, Typography } from '@material-ui/core';
 import { styles } from '../Styles/styles';
-import { ListLink } from '../Types/UserRepositoriesTypes';
 import { useParams } from 'react-router-dom';
+import { ListItemLink } from './ListItemLink';
 
 
 const useStyles = makeStyles(styles);
-const ListItemLink:FunctionComponent<ListLink> = (props) => <ListItem alignItems="center"  component="a" {...props} />;
+
   export const UserDisplay : FunctionComponent=()=>{
     const classes = useStyles();
     const {userId} = useParams<{userId: string}>();

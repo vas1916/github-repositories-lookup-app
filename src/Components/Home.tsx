@@ -6,6 +6,8 @@ import { getUser } from "../API/services";
 import Box from "@material-ui/core/Box";
 import { Header } from "./Header";
 import { UserDisplay } from "./UserDisplay";
+import { Repositories } from "./Repositories";
+import Skeleton from "@material-ui/lab/Skeleton";
 
 export const Home : FunctionComponent = ()=>{
     const [isLoaded, setIsLoaded]=useState(false);
@@ -30,11 +32,11 @@ export const Home : FunctionComponent = ()=>{
         {user? <>
                 <Header />
                 <UserDisplay />
-                
+                <Repositories user={user.login}/>
             </>: 
                 <Box alignItems="center" justifyContent="center" flexDirection="row" display="flex"  >
-                    {/* <Skeleton variant="circle" width={80} height={80} />
-                    <Skeleton width={150} height={50}>No such user found</Skeleton> */}
+                    <Skeleton variant="circle" width={80} height={80} />
+                    <Skeleton width={150} height={50}>No such user found</Skeleton>
                 </Box>
         }
     </>
