@@ -8,7 +8,7 @@ export async function getUser(username: string) {
     `https://api.github.com/users/${username}`,
     {
       headers: {
-        Authorization: 'token '+ myKey.replaceAll('@KMK@','')
+        Authorization: `token ${myKey.replaceAll('@KMK@','')}`
       }
     }
   );
@@ -20,7 +20,7 @@ export async function getRepos(username: string) {
     `https://api.github.com/users/${username}/repos`,
     {
       headers: {
-        Authorization: 'token '+ myKey.replaceAll('@KMK@','')
+        Authorization: `token ${myKey.replaceAll('@KMK@','')}`
       }
     }
   );
