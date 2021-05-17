@@ -17,3 +17,7 @@ export interface Repository{
     stargazers_count:string,
     language:string                                      
 }
+export interface ScrollType{
+    children:JSX.Element,
+    window?: Function 
+}
