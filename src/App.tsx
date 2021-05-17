@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 
 import { Home } from './Components/Home';
+import { IndexHome } from "./Components/IndexHome";
 
 function App() {
   console.log("@@@@@@OAUTH_SECREsecrets.T,", process.env, process.env.OAUTH_SECRET)
@@ -17,10 +18,7 @@ function App() {
           </Route>
           <Route path="/">
          
-            <>Please enter user name in the url path to see the repositories 
-                <br /> Example: <a href='http://18.217.29.18:5439/vas1916'>Repos for Sreeni
-                </a>
-            </>
+            <IndexHome />
 
           </Route>
         </Switch>
