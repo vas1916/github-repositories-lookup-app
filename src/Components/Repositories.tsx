@@ -14,6 +14,7 @@ export const Repositories: FunctionComponent<User> = (props) => {
     getRepos(props.user).then((response)=>{
       setRepositories(response.data);
       setIsLoaded(true);
+      //added below line to achieve polling
       setTimeout(getRepositories, 15000);
     }).catch(
       ()=>{
