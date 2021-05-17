@@ -60,5 +60,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 
 ### Edit the url after the port with the user name to get his repos
-Eg: http://localhost:3000/<username>
+`Eg: http://localhost:3000/<username>`
 
